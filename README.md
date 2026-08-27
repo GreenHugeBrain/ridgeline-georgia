@@ -32,6 +32,22 @@ mountains.
 Barlow Condensed against Inter, deep green and stone. The grade badge is the only
 place colour carries meaning: cream for easy, ochre for moderate, clay for hard.
 
+## Pages
+
+Five real pages, not anchors on one:
+
+| Path | What is on it |
+|---|---|
+| `/` | Hero, the four principles, three trips, gallery strip |
+| `/tours/` | All six trips with the filters, itineraries and price calculator |
+| `/gallery/` | The photographs, full size on click |
+| `/about/` | How the trips are run, and when each region is open |
+| `/enquire/` | The enquiry form and the office details |
+
+Vite builds each from its own HTML entry and React root, so the URLs are real and
+there is no client-side router. Rollup splits React and the shared chrome into one
+chunk the browser keeps between pages, leaving 1-5 kB per page.
+
 ## Run locally
 
 ```bash
